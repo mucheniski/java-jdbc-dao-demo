@@ -35,7 +35,7 @@ public class SellerTests {
 	}
 	
 	@Test
-	public void mustSellerFindAll() {
+	public void mustFindAllSellers() {
 		List<Seller> sellersAll = sellerDAO.findAll();
 		for (Seller sellerAll : sellersAll) {
 			System.out.println(sellerAll);
@@ -62,7 +62,7 @@ public class SellerTests {
 	}
 	
 	@Test
-	public void mustDeleteSeller() {
+	public void mustDeleteSellerById() {
 		sellerDAO.deleteById(3);		
 		System.out.println("Delete completed!");
 		Seller deletedSeller = sellerDAO.findById(3);
