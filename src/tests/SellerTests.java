@@ -14,7 +14,7 @@ import entities.Department;
 import entities.Seller;
 
 public class SellerTests {
-	
+	 
 	private SellerDAO sellerDAO = DAOFactory.createSellerDAO();
 
 	@Test
